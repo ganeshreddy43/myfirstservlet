@@ -1,0 +1,43 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>com.neoteric.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ForwardServlet</servlet-name>
+    <servlet-class>com.neoteric.ForwardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForwardServlet</servlet-name>
+    <url-pattern>/forward</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>com.neoteric.RedirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>IncludedServlet</servlet-name>
+    <servlet-class>com.neoteric.IncludedServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncludedServlet</servlet-name>
+    <url-pattern>/included</url-pattern>
+  </servlet-mapping>
+
+</web-app>
