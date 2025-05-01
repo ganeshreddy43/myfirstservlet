@@ -10,8 +10,21 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>HomeServlet</servlet-name>
-    <url-pattern>/home</url-pattern>
+    <url-pattern>/home</url-pattern> 
   </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>com.neoteric.StudentServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/showStudents</url-pattern>
+  </servlet-mapping>
+
 
   <servlet>
     <servlet-name>ForwardServlet</servlet-name>
